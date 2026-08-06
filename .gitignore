@@ -1,0 +1,28 @@
+# Credentials and environment-specific configuration
+.env
+.env.*
+*.key
+*.pem
+*secret*
+
+# Run artifacts, exports, recipient records, and delivery receipts
+current-run-tasks.json
+collection-provenance.json
+normalized-records.json
+evidence-index.json
+semantic-review-ledger.json
+analysis.json
+validation.json
+regulatory-risk-report.html
+manifest.json
+receipt*.json
+send-ledger*.json
+raw/
+exports/
+reports/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/

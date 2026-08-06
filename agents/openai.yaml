@@ -1,0 +1,15 @@
+interface:
+  display_name: "金融监管动态风险监测"
+  short_description: "动态读取八爪鱼全量数据，按企业画像生成并送达HTML风险报告"
+  default_prompt: "Use $financial-regulatory-risk-monitor to collect the latest confirmed Octoparse tasks, analyze the full unpredictable dataset against my enterprise profile, generate an evidence-gated HTML risk report, and deliver it through my confirmed channel."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "bazhuayu"
+      description: "Start, monitor, and export the customer's confirmed Octoparse tasks through API-Key authentication."
+      transport: "streamable_http"
+      url: "https://mcp.bazhuayu.com/"
+
+policy:
+  allow_implicit_invocation: true
